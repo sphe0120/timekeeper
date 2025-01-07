@@ -7,6 +7,7 @@
 /* before 1st chime */
 .phase-0{
 	/* styles for body element */
+	
 }
 .phase-0 #time{
 }
@@ -14,19 +15,23 @@
 /* after 1st chime before 2nd chime */
 .phase-1{
 	/* styles for body element */
+	background-color: rgb(103, 0, 24);
 }
 
 /* after 2nd chime before 3rd chime */
 .phase-2{
 	/* styles for body element */
+	background-color: rgb(255, 0, 0);
 }
 .phase-2 #time{
 	/* style for displayed time can be changed in this way */
+	color: rgb(0, 0, 0);
 }
 
 /* after 3rd chime */
 .phase-3{
 	/* styles for body element */
+	background-color: rgb(43, 0, 255);
 }
 
 

@@ -28,10 +28,10 @@ $(function () {
 	let time_inner = 0;
 	var loadedcss = '';
 	$('#time0').val('0:00');
-	$('#time1').val('15:00');
-	$('#time2').val('20:00');
-	$('#time3').val('25:00');
-	$('#info').html("Click to edit this message.");
+	$('#time1').val('9:00');
+	$('#time2').val('10:00');
+	$('#time3').val('14:00');
+	$('#info').html("");
 
 	function getHashParams() {
 		var hashParams = {};
@@ -95,6 +95,7 @@ $(function () {
 	});
 
 	var infoline = $('#info').html();
+
 	$('#info').blur(function () {
 		if (infoline != $(this).html()) {
 			infoline = $(this).html();

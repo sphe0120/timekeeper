@@ -35,9 +35,7 @@ html,body{
 	font-size:16px;
 }
 
-/*.container-fluid{
-	height:100%;
-}*/
+
 .navbar-header {
     float: left;
 }
@@ -101,9 +99,17 @@ html,body{
 	user-select: none;
 }
 
+#logo{
+	width:100%;
+	background: black;
+	padding-top: 30px;
+	display: flex; /* Flexboxを有効化 */
+	justify-content: center; /* 水平中央揃え */
+}
+
 #state{
 	font-weight: bold;
-	color: orange;
+	color: rgb(0, 0, 0);
 	width:100%;
 	position: absolute;
 	text-align: center;
@@ -112,7 +118,7 @@ html,body{
 
 #info{
 	font-weight: bold;
-	color: white;
+	color: rgb(181, 102, 37);
 	width:100%;
 	position: absolute;
 	text-align: center;
