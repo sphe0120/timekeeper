@@ -22,6 +22,38 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
+
+// 強制キャッシュのための関数
+function forceCacheAudio(url) {
+    fetch(url)
+        .then(response => {
+            if (!response.ok) throw new Error(`Failed to cache: ${url}`);
+            return response.blob();
+        })
+        .then(blob => {
+            console.log(`Cached audio: ${url}`);
+        })
+        .catch(err => {
+            console.error(err);
+        });
+}
+
+// サウンドファイルをキャッシュ
+const audioFiles = [
+    "./wav/chime1.mp3",
+    "./wav/chime2.mp3",
+    "./wav/chime3.mp3"
+];
+
+audioFiles.forEach(file => forceCacheAudio(file));
+
+// オーディオオブジェクトの作成
+var audio_chime1 = new Audio("./wav/chime1.mp3");
+var audio_chime2 = new Audio("./wav/chime2.mp3");
+var audio_chime3 = new Audio("./wav/chime3.mp3");
+
+
+
 $(function () {
 	let nletters = 5, last_nletters = 5;
 	let time_str = "00:00";
