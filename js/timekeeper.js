@@ -62,7 +62,7 @@ $(function () {
 	$('#time0').val('-7:00');
 	$('#time1').val('-1:00');
 	$('#time2').val('0:00');
-	$('#time3').val('1:00');
+	$('#time3').val('2:00');
 	$('#info').html("");
 
 	function getHashParams() {
